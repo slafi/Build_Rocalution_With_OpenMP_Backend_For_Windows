@@ -94,7 +94,7 @@ After download rocALUTION code, rename the folder "*rocALUTION-develop*" to "*ro
 2. Open the Visual Studio solution by double clicking the file "rocalution.sln" (see Figure 3)
 3. Once the solution is opened in Microsoft Visual Studio IDE, the rocalution projects are listed in the Solution Explorer (see Figure 4)
 
-<img src="./resources/solution_projects.PNG" width="100%"><br/>
+<img src="./resources/solution_projects.PNG" width="50%"><br/>
 *Figure 4. Rocalution solution projects*
 
 ## Compile Rocalution Library
@@ -118,22 +118,22 @@ Once this error is corrected, the rocalution project can be built as a shared li
 7. Under "**C/C++**" and "**Language**" tab, make sure that "**Open MP Support**" is set to "**Yes (/openmp)**" (see Figure 10).
 8. The output library will be stored under "**[PATH]\rocalution\build\src\Release\rocalution.lib**" (see Figure 11).
 
-<img src="./resources/select_library_type.PNG" width="40%"><br/>
+<img src="./resources/select_library_type.PNG" width="100%"><br/>
 *Figure 6. Select static library*
 
-<img src="./resources/target_file_extension.PNG" width="40%"><br/>
+<img src="./resources/target_file_extension.PNG" width="100%"><br/>
 *Figure 7. Set target file extension to ".lib"*
 
-<img src="./resources/optimization_flag.PNG" width="40%"><br/>
+<img src="./resources/optimization_flag.PNG" width="100%"><br/>
 *Figure 8. Select maximum optimization*
 
-<img src="./resources/library_runtime_type.PNG" width="40%"><br/>
+<img src="./resources/library_runtime_type.PNG" width="100%"><br/>
 *Figure 9. Select runtime library type*
 
-<img src="./resources/set_openmp_support.PNG" width="40%"><br/>
+<img src="./resources/set_openmp_support.PNG" width="100%"><br/>
 *Figure 10. Set OpenMP support*
 
-<img src="./resources/build_release_version.PNG" width="40%"><br/>
+<img src="./resources/build_release_version.PNG" width="100%"><br/>
 *Figure 11. The release version of the library is saved to "build/src/Release"*
 
 ### Build Release Version With Debug Info version
@@ -142,7 +142,7 @@ in addition to the steps taken for "*Release*" version, add the following:
 
 1. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**" (see Figure 12).
 
-<img src="./resources/program_database.PNG" width="40%"><br/>
+<img src="./resources/program_database.PNG" width="100%"><br/>
 *Figure 12. Enable program database to generate '.pdb' files*
 
 ### Build Debug Version
@@ -151,7 +151,7 @@ in addition to the steps taken for "*Release*" version, add the following:
 2. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**" (see Figure 12).
 3. Under "**C/C++**" and "**Optimization**" tab, make sure that "**Optimization**" is set to "**Disabled (/Od)**" (see Figure 13).
 
-<img src="./resources/disable_optimization.PNG" width="40%"><br/>
+<img src="./resources/disable_optimization.PNG" width="100%"><br/>
 *Figure 13. Disable optimization for the debug release*
 
 ## Resources
