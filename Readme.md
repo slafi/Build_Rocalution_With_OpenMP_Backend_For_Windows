@@ -78,24 +78,23 @@ After download rocALUTION code, rename the folder "*rocALUTION-develop*" to "*ro
     * Once the configuration process is done, make sure that the "SUPPORT_OMP" flag is checked
 6. Press the button "Generate"
 
-![alt text][resources/configuration.png]
-<img src="resources/configuration.png" width="50%"><br/>
+<img src="resources/configuration.pPNGng" width="100%"><br/>
 *Figure 1. Configure project using CMAKE*
 
-<img src="./resources/generation_1.PNG" width="50%"><br/>(a)<br/>
-<img src="./resources/generation_2.png" width="50%"><br/>(b)<br/>
+<img src="./resources/generation_1.PNG" width="100%"><br/>(a)<br/>
+<img src="./resources/generation_2.PNG" width="100%"><br/>(b)<br/>
 *Figure 2. Generate visual studio project using CMAKE: (a) Make sure that the "SUPPORT_OMP" flag is checked before clicking "Generate" (b) Once project generation is done, notice the visual studio solution and projects files added to the folder*
 
 ## Compile the Visual Studio Solution
 
-<img src="./resources/generated_files.png" width="50%"><br/>
+<img src="./resources/generated_files.PNG" width="100%"><br/>
 *Figure 3. Generated visual studio solution*
 
 1. Open the "build" directory
 2. Open the Visual Studio solution by double clicking the file "rocalution.sln" (see Figure 3)
 3. Once the solution is opened in Microsoft Visual Studio IDE, the rocalution projects are listed in the Solution Explorer (see Figure 4)
 
-<img src="./resources/solution_projects.png" width="25%"><br/>
+<img src="./resources/solution_projects.PNG" width="100%"><br/>
 *Figure 4. Rocalution solution projects*
 
 ## Compile Rocalution Library
