@@ -78,7 +78,7 @@ After download rocALUTION code, rename the folder "*rocALUTION-develop*" to "*ro
     * Once the configuration process is done, make sure that the "SUPPORT_OMP" flag is checked
 6. Press the button "Generate"
 
-<img src="./resources/configuration.png" width="50%"><br/>
+<img src="resources/configuration.png" width="50%"><br/>
 *Figure 1. Configure project using CMAKE*
 
 <img src="./resources/generation_1.png" width="50%"><br/>(a)<br/>
