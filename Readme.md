@@ -117,7 +117,6 @@ Once this error is corrected, the *rocalution* project can be built as a shared 
 6. Under "**C/C++**" and "**Code Generation**" tab, make sure that "**Runtime Library**" is set to "**Multi-threaded (/MT)**" (see Figure 9).
 7. Under "**C/C++**" and "**Language**" tab, make sure that "**Open MP Support**" is set to "**Yes (/openmp)**" (see Figure 10).
 8. Click "**OK**". Then, rebuild the project.
-The output library will be stored under "**[PATH]\rocalution\build\src\Release\rocalution.lib**" (see Figure 11).
 
 <img src="./resources/select_library_type.PNG" width="100%"><br/>
 *Figure 6. Select static library*
@@ -133,6 +132,8 @@ The output library will be stored under "**[PATH]\rocalution\build\src\Release\r
 
 <img src="./resources/set_openmp_support.PNG" width="100%"><br/>
 *Figure 10. Set OpenMP support*
+
+The output library will be stored under "**[PATH]\rocalution\build\src\Release\rocalution.lib**" (see Figure 11).
 
 <img src="./resources/build_release_version.PNG" width="100%"><br/>
 *Figure 11. The release version of the library is saved to "build/src/Release"*
