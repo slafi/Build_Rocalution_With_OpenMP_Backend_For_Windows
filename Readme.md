@@ -107,28 +107,52 @@ After download rocALUTION code, rename the folder "*rocALUTION-develop*" to "*ro
 
 Once this error is corrected, the rocalution project can be built as a shared library.
 
-### Compile Release Version
+### Build Release Version
 
-1. Select "**Release**" in the configuration dropdown list
-2. Right-click on "**rocalution**" project and then click "**Properties**"
-3. In the "**General**" tab, select "**Static Library (.lib)**" in the "**Configuration Type**"
-4. In the "**Advanced**" tab, make sure that the "**Target File Extension**" is "**.lib**"
-5. Under "**C/C++**" and "**Optimization**" tab, make sure that "**Optimization**" is set to "**Maximum Optimization (Favor Speed) (/O2)**"
-6. Under "**C/C++**" and "**Code Generation**" tab, make sure that "**Runtime Library**" is set to "**Multi-threaded (/MT)**" 
-7. Under "**C/C++**" and "**Language**" tab, make sure that "**Open MP Support**" is set to "**Yes (/openmp)**" 
-8. The output library will be stored under "**[PATH]\rocalution\build\src\Release\rocalution.lib**"
+1. Select "**Release**" in the configuration dropdown list.
+2. Right-click on "**rocalution**" project and then click on "**Properties**".
+3. In the "**General**" tab, select "**Static Library (.lib)**" in the "**Configuration Type**" (see Figure 6).
+4. In the "**Advanced**" tab, make sure that the "**Target File Extension**" is "**.lib**" (see Figure 7).
+5. Under "**C/C++**" and "**Optimization**" tab, make sure that "**Optimization**" is set to "**Maximum Optimization (Favor Speed) (/O2)**" (see Figure 8).
+6. Under "**C/C++**" and "**Code Generation**" tab, make sure that "**Runtime Library**" is set to "**Multi-threaded (/MT)**" (see Figure 9).
+7. Under "**C/C++**" and "**Language**" tab, make sure that "**Open MP Support**" is set to "**Yes (/openmp)**" (see Figure 10).
+8. The output library will be stored under "**[PATH]\rocalution\build\src\Release\rocalution.lib**" (see Figure 11).
 
-### Compile Release Version With Debug Info version
+<img src="./resources/select_library_type.png" width="40%"><br/>
+*Figure 6. Select static library*
+
+<img src="./resources/target_file_extension.png" width="40%"><br/>
+*Figure 7. Set target file extension to ".lib"*
+
+<img src="./resources/optimization_flag.png" width="40%"><br/>
+*Figure 8. Select maximum optimization*
+
+<img src="./resources/library_runtime_type.png" width="40%"><br/>
+*Figure 9. Select runtime library type*
+
+<img src="./resources/set_openmp_support.png" width="40%"><br/>
+*Figure 10. Set OpenMP support*
+
+<img src="./resources/build_release_version.png" width="40%"><br/>
+*Figure 11. The release version of the library is saved to "build/src/Release"*
+
+### Build Release Version With Debug Info version
 
 in addition to the steps taken for "*Release*" version, add the following:
 
-1. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**"
+1. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**" (see Figure 12).
 
-### Compile Debug Version
+<img src="./resources/program_database.png" width="40%"><br/>
+*Figure 12. Enable program database to generate '.pdb' files*
 
-1. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**"
-2. Under "**C/C++**" and "**Optimization**" tab, make sure that "**Optimization**" is set to "**Disabled (/Od)**"
- 
+### Build Debug Version
+
+1. Select "**Debug**" in the configuration dropdown list.
+2. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**" (see Figure 12).
+3. Under "**C/C++**" and "**Optimization**" tab, make sure that "**Optimization**" is set to "**Disabled (/Od)**" (see Figure 13).
+
+<img src="./resources/disable_optimization.png" width="40%"><br/>
+*Figure 13. Disable optimization for the debug release*
 
 ## Resources
 
