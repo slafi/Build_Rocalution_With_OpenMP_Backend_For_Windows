@@ -100,12 +100,12 @@ After download rocALUTION code, rename the folder "*rocALUTION-develop*" to "*ro
 ## Compile Rocalution Library
 
 1. In the solution explorer, right-click on “rocalution” project and click “Build” (Notice that the default build is Debug and default platform is x64).
-* You might get the error **"C2065 'M_PI': undeclared identifier"** (see Figure 5). This refers to the variable **M_PI** in *line 430* of the *file host_vector.cpp*. This variable appears only once in that file and project. To solve this error, just add this line to the beginning of the function *"double M_PI = 3.141592653589793238;"*, then rebuild the project.
+* You might get the error **"C2065 'M_PI': undeclared identifier"** (see Figure 5). This refers to the variable **M_PI** in *line 430* of the file *host_vector.cpp*. This variable appears only once in that file and project. To solve this error, just add this line to the beginning of the function *"double M_PI = 3.141592653589793238;"* (e.g., line 420), then rebuild the project.
 
 <img src="./resources/compiling_error.PNG" width="100%"><br/>
 *Figure 5. Potential compilation error*
 
-Once this error is corrected, the rocalution project can be built as a shared library.
+Once this error is corrected, the *rocalution* project can be built as a shared library.
 
 ### Build Release Version
 
@@ -116,7 +116,8 @@ Once this error is corrected, the rocalution project can be built as a shared li
 5. Under "**C/C++**" and "**Optimization**" tab, make sure that "**Optimization**" is set to "**Maximum Optimization (Favor Speed) (/O2)**" (see Figure 8).
 6. Under "**C/C++**" and "**Code Generation**" tab, make sure that "**Runtime Library**" is set to "**Multi-threaded (/MT)**" (see Figure 9).
 7. Under "**C/C++**" and "**Language**" tab, make sure that "**Open MP Support**" is set to "**Yes (/openmp)**" (see Figure 10).
-8. The output library will be stored under "**[PATH]\rocalution\build\src\Release\rocalution.lib**" (see Figure 11).
+8. Click "**OK**". Then, rebuild the project.
+The output library will be stored under "**[PATH]\rocalution\build\src\Release\rocalution.lib**" (see Figure 11).
 
 <img src="./resources/select_library_type.PNG" width="100%"><br/>
 *Figure 6. Select static library*
@@ -138,21 +139,25 @@ Once this error is corrected, the rocalution project can be built as a shared li
 
 ### Build Release Version With Debug Info version
 
-in addition to the steps taken for "*Release*" version, add the following:
+In addition to the steps taken for "*Release*" version, add the following:
 
-1. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**" (see Figure 12).
-
+1. Select "**RelWithDebInfo**" in the configuration dropdown list.
+2. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**" (see Figure 12).
+The building process generates two files ('.lib' and '.pdb') which are stored under "**[PATH]\rocalution\build\src\RelWithDebInfo\rocalution.lib**" (see Figure 13). 
 <img src="./resources/program_database.PNG" width="100%"><br/>
-*Figure 12. Enable program database to generate '.pdb' files*
+*Figure 12. Enable program database flag to generate '.pdb' files*
+
+<img src="./resources/output_files.PNG" width="100%"><br/>
+*Figure 13. Output files for the RelWithDebInfo release*
 
 ### Build Debug Version
 
 1. Select "**Debug**" in the configuration dropdown list.
 2. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**" (see Figure 12).
-3. Under "**C/C++**" and "**Optimization**" tab, make sure that "**Optimization**" is set to "**Disabled (/Od)**" (see Figure 13).
+3. Under "**C/C++**" and "**Optimization**" tab, make sure that "**Optimization**" is set to "**Disabled (/Od)**" (see Figure 14).
 
 <img src="./resources/disable_optimization.PNG" width="100%"><br/>
-*Figure 13. Disable optimization for the debug release*
+*Figure 14. Disable optimization for the debug release*
 
 ## Resources
 
