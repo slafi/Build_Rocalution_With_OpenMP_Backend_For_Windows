@@ -82,7 +82,7 @@ After download rocALUTION code, rename the folder "*rocALUTION-develop*" to "*ro
 <img src="resources/configuration.png" width="50%"><br/>
 *Figure 1. Configure project using CMAKE*
 
-<img src="./resources/generation_1.png" width="50%"><br/>(a)<br/>
+<img src="./resources/generation_1.PNG" width="50%"><br/>(a)<br/>
 <img src="./resources/generation_2.png" width="50%"><br/>(b)<br/>
 *Figure 2. Generate visual studio project using CMAKE: (a) Make sure that the "SUPPORT_OMP" flag is checked before clicking "Generate" (b) Once project generation is done, notice the visual studio solution and projects files added to the folder*
 
