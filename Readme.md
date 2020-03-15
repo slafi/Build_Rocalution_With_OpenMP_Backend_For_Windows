@@ -144,9 +144,11 @@ In addition to the steps taken for "*Release*" version, add the following:
 
 1. Select "**RelWithDebInfo**" in the configuration dropdown list.
 2. Under "**C/C++**" and "**General**" tab, make sure that "**Debug Information Format**" is set to "**Program Database (/Zi)**" (see Figure 12).
-The building process generates two files ('.lib' and '.pdb') which are stored under "**[PATH]\rocalution\build\src\RelWithDebInfo\rocalution.lib**" (see Figure 13). 
+
 <img src="./resources/program_database.PNG" width="100%"><br/>
 *Figure 12. Enable program database flag to generate '.pdb' files*
+
+The building process generates two files ('.lib' and '.pdb') which are stored under "**[PATH]\rocalution\build\src\RelWithDebInfo\rocalution.lib**" (see Figure 13). 
 
 <img src="./resources/output_files.PNG" width="100%"><br/>
 *Figure 13. Output files for the RelWithDebInfo release*
