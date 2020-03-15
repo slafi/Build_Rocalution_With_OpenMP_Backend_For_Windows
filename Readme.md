@@ -162,6 +162,8 @@ The building process generates two files ('.lib' and '.pdb') which are stored un
 <img src="./resources/disable_optimization.PNG" width="100%"><br/>
 *Figure 14. Disable optimization for the debug release*
 
+The building process generates also two files ('.lib' and '.pdb') which are stored under "**[PATH]\rocalution\build\src\Debug\rocalution.lib**".
+
 ## Resources
 
 * [Rocalution source code on Github](https://github.com/ROCmSoftwarePlatform/rocALUTION)
